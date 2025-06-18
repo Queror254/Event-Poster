@@ -16,7 +16,7 @@ const Poster: React.FC = () => {
         <div>
           {/* Top decorative part */}
           <div className="mb-8 sm:mb-10">
-            <p className="text-[10px] sm:text-xs uppercase tracking-widest text-neutral-400 mb-1">Tech Event Presents</p>
+            <p className="text-[10px] sm:text-xs uppercase tracking-widest text-neutral-400 mb-1">Elorua Presents</p>
             <div className="flex space-x-px h-8 sm:h-10 w-full items-stretch overflow-hidden">
               {[1, 0.7, 1, 0.5, 1, 0.8, 1, 0.6, 1, 0.7, 1, 0.5, 1, 0.8, 1, 0.6, 1, 0.5, 1, 0.9, 0.4, 1, 0.7, 1, 0.5, 1, 0.8, 1].slice(0, Math.floor(35 * 0.3)).map((barHeight, i) => ( // Adjust number of bars
                 <div key={i} className="bg-neutral-500 flex-grow" style={{ height: `${barHeight * 100}%` }}></div>

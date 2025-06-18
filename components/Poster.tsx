@@ -9,7 +9,7 @@ const Poster: React.FC = () => {
   ];
 
   return (
-    <div className="w-full max-w-[600px] aspect-[2/3] bg-black text-white shadow-2xl flex flex-row rounded-lg overflow-hidden font-sans">
+    <div className="w-full max-w-[600px] sm:aspect-[2/3] bg-black text-white shadow-2xl flex flex-row rounded-lg overflow-hidden font-sans">
       {/* Left Column */}
       <div className="w-[35%] bg-neutral-900 p-5 sm:p-6 flex flex-col justify-between">
         <div>

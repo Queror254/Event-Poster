@@ -11,45 +11,63 @@ const Poster: React.FC = () => {
   return (
     <div className="w-full max-w-[600px] sm:aspect-[2/3] bg-black text-white shadow-2xl flex flex-row rounded-lg overflow-hidden font-sans">
       {/* Left Column */}
-      <div className="w-[35%] bg-neutral-900 px-4 flex flex-col">
-        {/* Event Company Logo */}
-        <img
-          src="/images/logo.png"
-          alt="Elorua Community Builders Logo"
-          style={{
-            width: "auto",
-            height: "auto",
-            padding: 0,
-            margin: 0,
-            objectFit: "contain",
-          }}
-        />
-        <div>
-          <p className="text-sm sm:text-sm md:textsm font-bold leading-none tracking-tighter text-neutral-100">
-            JOIN US ON
-          </p>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-bold leading-none tracking-tighter text-neutral-100">
-            JULY 06,
-          </p>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-tighter text-neutral-100">
-            2025
-          </p>
-          <p className="text-[15px] sm:text-[15px] text-neutral-100 mt-1.5 sm:mt-2 uppercase tracking-wider">
-            VENUE: Meru Library
-          </p>
-          <p className="text-[15px] sm:text-[15px] text-neutral-100 mt-1.5 sm:mt-2 uppercase tracking-wider">
-            TIME: 2PM - 3PM
-          </p>
-        </div>
+      <div className="w-[35%] bg-neutral-900 p-5 sm:p-6 flex flex-col justify-between">
+          {/* Event Company Logo */}
+          <img
+            src="/images/logox.png"
+            alt="Elorua Community Builders Logo"
+            style={{
+              width: "auto",
+              height: "auto",
+              padding: 0,
+              margin: 0,
+              objectFit: "contain",
+            }}
+          />
+
+          <div className="mt-auto">
+            <p className="text-sm sm:text-sm md:textsm font-bold leading-none tracking-tighter text-neutral-100">
+              JOIN US ON
+            </p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold leading-none tracking-tighter text-neutral-100">
+              JULY 06,
+            </p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-tighter text-neutral-100">
+              2025
+            </p>
+            <p className="text-[15px] sm:text-[15px] text-neutral-100 mt-1.5 sm:mt-2 uppercase tracking-wider">
+              VENUE: Meru Library
+            </p>
+            <p className="text-[15px] sm:text-[15px] text-neutral-100 mt-1.5 sm:mt-2 uppercase tracking-wider">
+              TIME: 2PM - 3PM
+            </p>
+          </div>
+
+          {/* Topic Highlights */}
+          <div className="mt-auto mb-6 sm:mb-8">
+            <h3 className="text-xs sm:text-sm font-semibold text-neutral-200 uppercase tracking-wider mb-2 sm:mb-3">
+              Topic Highlights:
+            </h3>
+            <ul className="space-y-1 sm:space-y-1.5 text-[10px] sm:text-xs text-neutral-300">
+              {highlights.map((highlight, index) => (
+                <li key={index} className="flex">
+                  <span className="mr-1.5 sm:mr-2 text-neutral-500">-</span>
+                  <span>{highlight}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
         {/* Date and Footer Info */}
         <div className="mt-auto py-10">
           <p className="text-[9px] sm:text-[10px] text-neutral-400 mt-1.5 sm:mt-2 uppercase tracking-wider">
             Duration: 1hr 30min
           </p>
-          <p className="text-[8px] sm:text-[9px] text-neutral-500 mt-3 sm:mt-4 uppercase tracking-wider">
+          <p className="text-[9px] sm:text-[10px] text-neutral-500 mt-3 sm:mt-4 uppercase tracking-wider">
             @elorua / #StartWhereYouAreKE
           </p>
         </div>
+
       </div>
 
       {/* Right Column */}

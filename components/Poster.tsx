@@ -39,7 +39,7 @@ const Poster: React.FC = () => {
               VENUE: Meru Library
             </p>
             <p className="text-[15px] sm:text-[15px] text-neutral-100 mt-1.5 sm:mt-2 uppercase tracking-wider">
-              TIME: 2PM - 3PM
+              TIME: 2PM - 4PM
             </p>
           </div>
 
@@ -61,7 +61,7 @@ const Poster: React.FC = () => {
         {/* Date and Footer Info */}
         <div className="mt-auto py-10">
           <p className="text-[9px] sm:text-[10px] text-neutral-400 mt-1.5 sm:mt-2 uppercase tracking-wider">
-            Duration: 1hr 30min
+            Duration: 2hrs
           </p>
           <p className="text-[9px] sm:text-[10px] text-neutral-500 mt-3 sm:mt-4 uppercase tracking-wider">
             @elorua / #StartWhereYouAreKE
